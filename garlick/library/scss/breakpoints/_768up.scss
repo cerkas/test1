@@ -1,0 +1,1178 @@
+	/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+/*********************
+GENERAL STYLES
+*********************/
+/* {
+margin:0;
+}
+
+body {
+
+    height: 100%;
+    min-width:900px; 
+}
+html { 
+ position:relative; 
+ min-height:100%;
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+//$elementcontent:;
+$ellipse: url('../images/group.png');
+$icons: url('../images/icons.png)');
+
+
+.wrap {
+	width: 768px;
+
+}
+
+/*********************
+HEADER STYLES
+*********************/
+body{
+	margin-left: 25px;
+}
+
+.header {
+	background-color:white;
+	width:768px;
+	height: 162px;
+	position:relative;
+}
+
+	div #logo {
+  display: inline-block;
+  
+  background-image: url('../images/logo768.png');
+  background-repeat: no-repeat;
+  height:140px;
+  float: left;
+  margin-left: 30px;
+  position:relative;
+  z-index:2;
+
+    height: 120px;
+    width: 160px;
+
+  
+
+  /*top-left:no-repeat;*/
+}
+ 
+.contactua, .contactru {
+  
+  display: inline-block;
+  padding-top: 30px;
+  line-height: 1;
+  margin-right: 23px;
+
+  #contry{
+  	font-family: Roboto;
+    color: #000000;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 500;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+  }
+  #ph_number{
+  	font-family: Roboto;
+color: #000000;
+font-size: 18px; /* Приближение из-за подстановки шрифтов */
+font-weight: 500;
+ /* Приближение из-за подстановки шрифтов */
+text-align: left;
+transform: scaleX(1.0009); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+
+  }
+  #city{
+  	font-family: Roboto;
+color: #000000;
+font-size: 11px; /* Приближение из-за подстановки шрифтов */
+font-weight: 400;
+ /* Приближение из-за подстановки шрифтов */
+text-align: left;
+
+  }
+  #prom_link{
+  	font-family: Roboto;
+color: #4172cd;
+font-size: 11px; /* Приближение из-за подстановки шрифтов */
+font-weight: 400;
+line-height: 28px; /* Приближение из-за подстановки шрифтов */
+text-decoration: underline;
+text-align: left;
+a{
+	color:#3f73ce;
+}
+
+  }
+
+  }
+  .buttom {
+  	position: relative;
+    margin-top: 42px;
+    margin-right: 70px;
+
+  display: inline-block;
+  float: right;
+  background-color: #f12a34;
+        width: 160px;
+        height: 36px;
+        border:none;
+        border-radius: 20px;
+        span {
+  	position: absolute;
+
+    left: 25px;
+    top: 7px;
+
+    font-family: SFUIDisplay;
+    color: #ffffff;
+    font-size: 14.92px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 600;
+    line-height: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    transform: scaleY(1.005);
+    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.08);
+  }
+  .mask1{
+  	display: none;
+  	width: 160px;
+    height: 36px;
+  }
+  .buttom:hover .mask1{
+  display: block;
+  background-color: black;
+}
+
+}
+  
+
+
+
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.nav {
+background: -webkit-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+background: -moz-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+background: -o-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+background: -ms-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+background: linear-gradient(180deg, #2ee48c 0%, #1f915a 100%);
+width:1111px;
+height: 45px;
+	ul {
+		background:$black;
+		margin-top:0;
+		z-index: 1;
+	}
+	li {
+		float: left;
+		position: relative;
+
+		a {
+			border-bottom: 0;
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				color: $white;
+				text-decoration: underline;
+			}
+		}
+
+		&:first-child {}
+		&:last-child {}
+
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		ul.sub-menu,
+		ul.children {
+			margin-top: 0;
+			border: 1px solid #ccc;
+			border-top: 0;
+			
+			;
+
+			li {
+
+				a {
+					padding-left: none;
+					border-right: 0;
+					display: block;
+					width: 180px;
+					border-bottom: 1px solid #ccc;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+				}
+
+				&:first-child {}
+
+				&:last-child {
+
+					a {
+						border-bottom: 0;
+					}
+				}
+
+				/*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+				ul {
+					top:0;
+					left:100%;
+				}
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current_page_ancestor {
+				a {}
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover > ul {
+			top: auto;
+			visibility:visible;
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current_page_ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+.wrapper {
+	height: 400px;
+	margin: 100px auto 0;
+	position: relative;
+	width: 768px;
+    margin-top: 0px;
+
+}
+
+.slider {
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+.slide1 { background-image: url("../images/lukchesnok768.png"); }
+.slide2 { background-image: url("../images/4esnok768.png"); }
+.slide3 { background-image: url("../images/chesnok-uborka768.png"); }
+
+
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,{
+	opacity: 1;
+	
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.greentizer{
+	background-image: url("../images/lukchesnok768.png");
+}
+
+.wrapper > input {
+	display: none;
+}
+
+.wrapper .controls {
+	left: 410px;
+	margin-left: -98px;
+	position: absolute;
+	top:230px;
+	
+}
+
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 10px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 10px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+	background: #ffffff;
+}
+
+.wrapper label:after {
+	border: 2px solid #ddd;
+	content: " ";
+	display: block;
+	height: 18px;
+	left: -6px;
+	position: absolute;
+	top: -5px;
+	width: 18px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+ .texttizer{
+ background-image:url("../images/bg_nadpis768.png") no-repeat;
+	
+border-width: 3px;
+border-color: #ffffff;
+border-style: solid;
+background-color: rgba(255, 255, 255, 0.72);
+opacity: 0.94;
+box-shadow: 5px 4px 13px 0px rgba(0, 0, 0, 0.28);
+width: 444px;
+height: 154px;
+margin-left:159px;
+margin-top:64px;
+ .text{
+ 	background-image:url("../images/bg_nadpis768.png") no-repeat;
+ 	display:none;
+ 	
+  h1{
+   	font-family: SFUIDisplay;
+    color: #353434;
+    font-size: 30px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 800;
+    line-height: 1; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    text-transform:uppercase;
+    span{
+    	color:#27bc74;
+    }
+   }
+   p{
+   	font-family: SFUIDisplay;
+color: #353535;
+font-size: 18px; /* Приближение из-за подстановки шрифтов */
+font-weight: 600;
+line-height: 1; /* Приближение из-за подстановки шрифтов */
+text-align: center;
+font-family: SFUIDisplay;
+color: #8d8e8b;
+font-size: 18px; /* Приближение из-за подстановки шрифтов */
+font-weight: 300;
+line-height: 35.895px; /* Приближение из-за подстановки шрифтов */
+text-align: center;
+font-family: SFUIDisplay;
+color: #27bc74;
+font-size: 18px; /* Приближение из-за подстановки шрифтов */
+font-weight: 600;
+line-height: 1; /* Приближение из-за подстановки шрифтов */
+
+text-align: center;
+font-family: SFUIDisplay;
+color: #8d8e8b;
+font-size: 18px; /* Приближение из-за подстановки шрифтов */
+font-weight: 600;
+line-height: 1; /* Приближение из-за подстановки шрифтов */
+text-align: center;
+font-family: SFUIDisplay;
+color: #4b4a4a;
+font-size: 18px; /* Приближение из-за подстановки шрифтов */
+font-weight: 600;
+line-height: 1; /* Приближение из-за подстановки шрифтов */
+text-align: center;
+
+span{
+    	color:#27bc74;
+    	text-decoration: underline;
+    }
+
+
+   }
+
+}
+}
+
+.greentizer{
+position: absolute;
+background: -webkit-linear-gradient(-90deg, rgba(44, 216, 133, 0.4) 0%, rgba(42, 207, 127, 0.5490200000000001) 0%, rgba(33, 160, 99, 0.85098) 83%, rgba(33, 156, 114, 0.85098) 100%);
+background: -moz-linear-gradient(-90deg, rgba(44, 216, 133, 0.4) 0%, rgba(42, 207, 127, 0.5490200000000001) 0%, rgba(33, 160, 99, 0.85098) 83%, rgba(33, 156, 114, 0.85098) 100%);
+background: -o-linear-gradient(-90deg, rgba(44, 216, 133, 0.4) 0%, rgba(42, 207, 127, 0.5490200000000001) 0%, rgba(33, 160, 99, 0.85098) 83%, rgba(33, 156, 114, 0.85098) 100%);
+background: -ms-linear-gradient(-90deg, rgba(44, 216, 133, 0.4) 0%, rgba(42, 207, 127, 0.5490200000000001) 0%, rgba(33, 160, 99, 0.85098) 83%, rgba(33, 156, 114, 0.85098) 100%);
+background: linear-gradient(180deg, rgba(44, 216, 133, 0.4) 0%, rgba(42, 207, 127, 0.5490200000000001) 0%, rgba(33, 160, 99, 0.85098) 83%, rgba(33, 156, 114, 0.85098) 100%);
+width: 768px;
+height: 110px;
+top: 290px;
+left: 0px;
+z-index: 3;
+     .flower , .like , .truck , .bor{
+     	display: inline-block;
+     	width: 20%;
+     	margin-left: 30px;
+     	line-height: 0.1;
+     	margin-top: 23px;
+     }
+      .imggreen {
+
+      	display: inline-block;
+     	width: 20%;
+     	float: left;
+     }
+      .textgreen{
+      	display: inline-block;
+     	width: 70%;
+     	float: right;
+     	p{
+     		width: 200px;
+     		margin-left: 7px;
+     	}
+     }
+     p{
+     	font-family: Roboto;
+color: #ffffff;
+font-size: 14px; /* Приближение из-за подстановки шрифтов */
+font-weight: 500;
+line-height: 1; /* Приближение из-за подстановки шрифтов */
+text-align: left;
+transform: scaleY(1.0003); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+text-transform: uppercase;
+     }
+     
+}
+.afternav{
+width: 768px;
+height: 400px;
+background-image: url('../images/tizer.png');
+background-color:#ffffff;
+}
+.chesnok{
+	width: 768px;
+    height: 400px;
+	background-image: url('../images/vector.png');
+
+}
+
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.sidepage{
+   display:none;
+}
+
+.sidebar {
+	margin-top: 2.2em;
+}
+
+	.widgettitle {
+		border-bottom: 2px solid #444;
+		margin-bottom: 0.75em;
+	}
+
+	.widget {
+		padding: 0 10px;
+		margin: 2.2em 0;
+
+		ul {
+			li {
+				margin-bottom: 0.75em;
+
+				&:first-child {}
+				&:last-child {}
+				a {}
+				/* deep nesting */
+
+				ul {
+					margin-top: 0.75em;
+					padding-left: 1em;
+				}
+			}
+		}
+	}
+
+
+	/* links widget */
+	.widget_links {}
+	.widget_links ul {}
+	.widget_links ul li {}
+	.widget_links ul li a {}
+
+	/* meta widget */
+	.widget_meta {}
+	.widget_meta ul {}
+	.widget_meta ul li {}
+	.widget_meta ul li a {}
+
+	/* pages widget */
+	.widget_pages {}
+	.widget_pages ul {}
+	.widget_pages ul li {}
+	.widget_pages ul li a {}
+
+	/* recent-posts widget */
+	.widget_recent_entries {}
+	.widget_recent_entries ul {}
+	.widget_recent_entries ul li {}
+	.widget_recent_entries ul li a {}
+
+	/* archives widget */
+	.widget_archive {}
+	.widget_archive ul {}
+	.widget_archive ul li {}
+	.widget_archive ul li a {}
+	.widget_archive select {}
+	.widget_archive option {}
+
+	/* tag-cloud widget */
+	.widget_links {}
+	.widget_links li:after {}
+	.widget_links li:before {}
+	.widget_tag_cloud {}
+	.widget_tag_cloud a {}
+	.widget_tag_cloud a:after {}
+	.widget_tag_cloud a:before {}
+
+	/* calendar widget */
+	.widget_calendar {}
+	#calendar_wrap {}
+	#calendar_wrap th {}
+	#calendar_wrap td {}
+	#wp-calendar tr td {}
+	#wp-calendar caption {}
+	#wp-calendar a {}
+	#wp-calendar #today {}
+	#wp-calendar #prev {}
+	#wp-calendar #next {}
+	#wp-calendar #next a {}
+	#wp-calendar #prev a {}
+
+	/* category widget */
+	.widget_categories {}
+	.widget_categories ul {}
+	.widget_categories ul li {}
+	.widget_categories ul ul.children {}
+	.widget_categories a {}
+	.widget_categories select{}
+	.widget_categories select#cat {}
+	.widget_categories select.postform {}
+	.widget_categories option {}
+	.widget_categories .level-0 {}
+	.widget_categories .level-1 {}
+	.widget_categories .level-2 {}
+	.widget_categories .level-3 {}
+
+	/* recent-comments widget */
+	.recentcomments {}
+	#recentcomments {}
+	#recentcomments li {}
+	#recentcomments li a {}
+	.widget_recent_comments {}
+
+	/* search widget */
+	#searchform {}
+	.widget_search {}
+	.screen-reader-text {}
+
+	/* text widget */
+	.textwidget {}
+	.widget_text {}
+	.textwidget p {}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+/*********************
+CONTENT STYLES
+*********************/
+#content {
+  padding-bottom: 402px;/*Примерно 2 размера footer, чтобы он не наезжал на контент при узком окне браузера*/
+  margin-top: 0px;
+
+}
+.pcv_button{
+	display:none;
+padding:5px 13px!important;
+margin:10px 5px!important;
+margin-right:0!important;
+border:solid 1px #000;
+float:right;
+background:#7abcff;
+background:-moz-linear-gradient(top,#7abcff 0,#60abf8 44%,#4096ee 100%);
+background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#7abcff),color-stop(44%,#60abf8),color-stop(100%,#4096ee));
+background:-webkit-linear-gradient(top,#7abcff 0,#60abf8 44%,#4096ee 100%);
+background:-o-linear-gradient(top,#7abcff 0,#60abf8 44%,#4096ee 100%);
+background:-ms-linear-gradient(top,#7abcff 0,#60abf8 44%,#4096ee 100%);
+background:linear-gradient(top,#7abcff 0,#60abf8 44%,#4096ee 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7abcff',endColorstr='#4096ee',GradientType=0);
+color:#eee;
+font:100% Arial,Helvetica,sans-serif;
+text-align:center;
+text-shadow:0 1px 0 rgba(55,121,188,.5);
+text-decoration:none!important;
+vertical-align:middle;zoom:1;*display:inline;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.1),inset 0 1px 0 rgba(255,255,255,.5),inset 0 -1px 0 rgba(255,255,255,.3);-moz-box-shadow:0 1px 0 rgba(0,0,0,.1),inset 0 1px 0 rgba(255,255,255,.5),inset 0 -1px 0 rgba(255,255,255,.3);box-shadow:0 1px 0 rgba(0,0,0,.1),inset 0 1px 0 rgba(255,255,255,.5),inset 0 -1px 0 rgba(255,255,255,.3)
+}
+.pcv_button:hover{
+	background:#22292F;
+
+
+}
+
+
+.odnozubka{
+  background-image: url('../images/card1.png');
+	/* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */
+  width: 27%;
+  height: 285px;
+  padding-top:30px;
+  display: inline-block;
+  margin-left:50px;
+  margin-top:50px;
+}
+.zubok{
+	
+	background-image: url('../images/card2.png');
+	width: 27%;
+    height: 285px;
+    padding-top:30px;
+    display: inline-block;
+}
+
+.vozduska{
+	 display: inline-block;
+	 background-image: url('../images/card3.png');
+	 width: 27%;
+     height: 285px;
+
+}
+.ourwork{
+	background-image: url('../images/xtcyjr.png');
+	width: 768px;
+    height: 280px;
+
+
+    h2{
+    	font-family: SFUIDisplay;
+        color: #ffffff;
+        font-size: 20px; /* Приближение из-за подстановки шрифтов */
+        font-weight: 700;
+        line-height: 18px; /* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        padding-top:45px;
+
+        
+    }
+    .ellipse1{
+    	border-radius: 50%;
+        background: -webkit-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+        background: -moz-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+        background: -o-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+        background: -ms-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+        background: linear-gradient(180deg, #2ee48c 0%, #1f915a 100%);
+        width: 70px;
+        height: 70px;
+        opacity:0.5;
+        display:inline-block;
+
+    }
+    .ellipseelement1{
+    	background-image:$ellipse;
+    	width: 647px;
+        height: 131px;
+        margin-left:77px;
+
+    }
+
+}
+
+.ourclient{
+	width: 768px;
+    height: 262px;
+    font-family: SFUIDisplay;
+    color: #27bc74;
+    font-size: 19.96px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 18px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    transform: scaleY(1.0018); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    text-align: center;
+    .line{
+    	background-image: url('../images/green_line.png');
+    	background: -webkit-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+        background: -moz-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+        background: -o-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+        background: -ms-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+        background: linear-gradient(180deg, #2ee48c 0%, #1f915a 100%);
+        width: 30px;
+        height: 2px;
+        margin-left:369px;
+    }
+    .company{
+    	background-image: url('../images/clients.png');
+    	width: 610px;
+        height: 68px;
+        margin-left: 71px;
+
+    }
+}
+ #contact {
+
+	background-image: url('../images/bg_zayavka768.png');
+	background-color: #3fca87;
+	overflow:0.5;
+	width: 768px;
+	height: 323px;
+	margin: 0;
+	padding: 0;
+
+	#fields{
+	margin-left:46px;
+    }
+	#text1{
+		background-color: #ffffff;
+        width: 293px;
+        height: 32px;
+        margin-left:25px;
+        display:inline-block;
+	}
+	 #email1{
+		background-color: #ffffff;
+        width: 293px;
+        height: 32px;
+        margin-left:5px;
+        display:inline-block;
+     
+       
+	}
+	#comment{
+		background-color: #ffffff;
+        width: 600px;
+        height: 66px;
+        display:block;
+        margin-top: 20px;
+        margin-left: 25px;
+	}
+	 h3{
+	  padding-top:31px;
+	  text-align:center;
+	  font-family: SFUIDisplay;
+      color: #ffffff;
+      font-size: 20px; /* Приближение из-за подстановки шрифтов */
+      font-weight: 700;
+      line-height: 18px; /* Приближение из-за подстановки шрифтов */
+     }
+     #textform{
+      	font-family: Roboto;
+        color: #ffffff;
+        font-size: 12px; /* Приближение из-за подстановки шрифтов */
+        font-weight: 500;
+        line-height: 25.934px; /* Приближение из-за подстановки шрифтов */
+        text-align: center;
+      }
+	#file{
+		background-image: url('../images/Rounded_black768.png');
+        width: 160px;
+        height: 36px;
+        margin-left: 150px;
+        padding-top:40px;
+        padding:0;
+        border:none;
+        border-radius: 20px;
+        margin-top: 25px;
+        span{
+        	font-family: Roboto;
+            color: #ffffff;
+            font-size: 13.93px; /* Приближение из-за подстановки шрифтов */
+            font-weight: 500;
+            line-height: 18px; /* Приближение из-за подстановки шрифтов */
+            text-align: left;
+            transform: scaleY(1.0051); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+        }
+	}
+	#submit{
+		background-color: #f12a34;
+        width: 160px;
+        height: 36px;
+        border:none;
+        border-radius: 20px;
+        top: 25px;
+        left: auto;
+        right: 230px;
+
+        span{
+        	font-family: Roboto;
+            color: #ffffff;
+            font-size: 13.93px; /* Приближение из-за подстановки шрифтов */
+            font-weight: 500;
+            line-height: 18px; /* Приближение из-за подстановки шрифтов */
+            text-align: center;
+            transform: scaleY(1.0051); 
+        }
+	}
+
+}
+
+
+.footer{
+	width: 768px;
+    height: 231px;
+    background-color:#363636;
+    a{
+    	color:#686868;
+    }
+    .footercontact{
+    	background-color: #363636;
+        width: 768px;
+        height: 201px;
+        .footercontactua {
+        	display: inline-block;
+        	margin-left:94px;
+        	margin-top:39px;
+
+        	
+        }
+        .footercontactru{
+        	display: inline-block;
+        	margin-left:53px;
+
+        }
+        .line{
+        	display: inline-block;
+        	background-image: url('../images/line768.png');
+        	background: -webkit-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+            background: -moz-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+            background: -o-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+            background: -ms-linear-gradient(-90deg, #2ee48c 0%, #1f915a 100%);
+            background: linear-gradient(180deg, #2ee48c 0%, #1f915a 100%);
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.22);
+            width: 4px;
+            height: 133px;  
+            margin-top:39px;
+            margin-left:53px;          
+        }
+        #contry{
+        		font-family: Roboto;
+                color: #ffffff;
+                font-size: 20px; /* Приближение из-за подстановки шрифтов */
+                font-weight: 400;
+                line-height: 18px; /* Приближение из-за подстановки шрифтов */
+                text-align: left;
+                transform: scaleX(1.002); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */                
+        	}
+       #ph_number{
+       	font-family: Roboto;
+        color: #27bc74;
+        font-size: 26px; /* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 18px; /* Приближение из-за подстановки шрифтов */
+        text-align: left;
+        transform: scaleX(1.0028); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+        text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.22);        
+       }
+       #city{
+       	font-family: Roboto;
+        color: #ffffff;
+        font-size: 16px; /* Приближение из-за подстановки шрифтов */
+        font-weight: 300;
+        line-height: 28px; /* Приближение из-за подстановки шрифтов */
+        text-align: left;
+        transform: scaleX(1.002); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+       }
+       #prom_link{
+       	font-family: Roboto;
+        color: #ffffff;
+        font-size: 16px; /* Приближение из-за подстановки шрифтов */
+        font-weight: 300;
+        line-height: 28px; /* Приближение из-за подстановки шрифтов */
+        text-decoration: underline;
+        text-align: left;
+        transform: scaleX(1.002); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */        
+       }
+    }
+}
+
+.copyright{
+	p{
+		font-family: Roboto;
+        color: #ffffff;
+        font-size: 12px; /* Приближение из-за подстановки шрифтов */
+        font-weight: 300;
+        line-height: 20px; /* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        transform: scaleX(1.0008); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+	}
+ 
+}
+
+.footer-links {
+	ul {
+		li {
+			a {
+				color:white;
+				&:hover {}
+			}
+			/*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/
+			ul {}
+		}
+	}
+} /* end .footer-links */
+#breadcrumbs_link{ 
+color:#333333; 
+font-size:18px; 
+text-decoration: underline; 
+} 
+.breadcrumb_m{  
+width: 824px; 
+height: 46px; 
+margin-bottom: 30px; 
+} 
+.breadcrumbs_m li{ 
+display: inline; 
+color:#333333; 
+font-size:18px; 
+} 
+.breadcrumb_m ul{ 
+padding-top:10px; 
+padding-left: 23px; 
+}
+/* About use page*/
+#main{
+	width:768px;
+    padding-right: 0px;
+
+}
+.tizeraboutuse{
+	background-image: url('../images/tizerabout768.png');
+	width:768px;
+	height:150px;
+    
+
+}
+
+.maintext{
+	margin-left: 84px;
+	margin-right: 84px;
+	h2{
+		font-family: SFUIDisplay;
+color: #27bc74;
+font-size: 26px; /* Приближение из-за подстановки шрифтов */
+font-weight: 700;
+line-height: 18px; /* Приближение из-за подстановки шрифтов */
+text-align: center;
+	}
+	font-family: Roboto;
+color: #000000;
+font-size: 18px; /* Приближение из-за подстановки шрифтов */
+font-weight: 400;
+line-height: 26px; /* Приближение из-за подстановки шрифтов */
+text-align: left;
+  img {
+  	width: 600px;
+height: 280px;
+top: 951px;
+left: 85px;
+  }
+}
+/* Garlick page*/
+.backcollor{
+	background-color: #f3f1f1;
+}
+.tizergarlick{
+	background-image: url('../images/tizerabout768.png');
+	width:768px;
+	height:150px;
+	#garlick{
+		
+	}
+    
+}
+.textgarlick{
+	
+	#first{
+		width: 581px;
+height: 355px;
+margin-left: 94px;
+margin-top: 50px;
+	}
+	
+
+}
+h2{
+			font-family: SFUIDisplay;
+color: #27bc74;
+font-size: 19.98px; /* Приближение из-за подстановки шрифтов */
+font-weight: 700;
+line-height: 50px; /* Приближение из-за подстановки шрифтов */
+text-align: center;
+transform: scaleY(1.001); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+		}
+#garlicfoto{
+	margin-left: 30px;
+	margin-top: 30px;
+	
+	img{
+		width: 314px;
+        height: 260px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+        
+
+	}
+}
+/*Odnozubka page*/
+.wrapperodnozubka{
+	width:700px;
+}
+.scrollfoto{
+	float:left;
+	margin-left: 68px;
+	margin-top: 62px;
+	height: 0px;
+}
+.product{
+
+    width: 300px;
+    height: 500px;
+
+	float:right;
+	margin-top: 62px;
+	h1{
+		font-family: SFUIDisplay;
+color: #000000;
+font-size: 20px; /* Приближение из-за подстановки шрифтов */
+font-weight: 700;
+line-height: 28px; /* Приближение из-за подстановки шрифтов */
+text-align: left;
+transform: scaleX(1.0008); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+	}
+	p{
+		text-align: left;
+	}
+}
+.price{
+background-color: #dfdddd;
+width: 309px;
+height: 98px;
+border-radius: 5px;
+ p{
+ 	background-position: left bottom;
+ 	line-height: 0.5;
+ 	text-decoration: underline;
+ 	background-image: url(http://wptuts.loc/wp-content/uploads/2017/03/green_line.png)no-repeat;
+ }
+}
+
+/*Button hover*/
+.mask{
+display: inline-block;
+position:absolute;
+top:50%;
+display:none;
+top: 100px;
+left: 40px;
+
+ img{
+ 	position: relative;
+ }
+ span{
+ 	position: absolute;
+	top: 4px;
+    left: 25px;
+	width: 100%;
+ }
+ a{
+ 	color: #ffffff;
+ }
+
+ 
+
+  }
+  .odnozubka:hover .mask{
+  display: block;
+}
+.zubok:hover .mask{
+  display: block;
+}
+.vozduska:hover .mask{
+  display: block;
+}
+
+
+				
